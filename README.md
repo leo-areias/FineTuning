@@ -4,7 +4,7 @@ Este repositório implementa uma rede neural com técnicas de **fine-tuning** pa
 
 ## 1. Base de Dados
 
-Utilizamos uma base de dados sintética criada com a função `make_classification` da biblioteca `sklearn`. Essa função gera um conjunto de dados de classificação binária, ideal para testar e treinar algoritmos de aprendizado de máquina.
+Foi utilizada uma base de dados sintética criada com a função `make_classification` da biblioteca `sklearn`. Essa função gera um conjunto de dados de classificação binária, ideal para testar e treinar algoritmos de aprendizado de máquina.
 
 - **n_samples=1000**: Gera 1000 amostras.
 - **n_features=10**: Cada amostra tem 10 características (ou variáveis).
@@ -13,14 +13,14 @@ Utilizamos uma base de dados sintética criada com a função `make_classificati
 
 ## 2. Dividindo a Base em Treinamento e Teste
 
-Dividimos os dados para treino e teste para avaliar o desempenho do modelo em dados novos.
+Foram divididos os dados para treino e teste para avaliar o desempenho do modelo em dados novos.
 
 - **test_size=0.2**: 20% dos dados são usados para teste, e 80% para treino.
 - **random_state=42**: Define uma semente para que a divisão seja sempre a mesma, garantindo reprodutibilidade.
 
 ## 3. Normalização dos Dados
 
-A normalização ajuda o modelo a convergir mais rápido e a lidar melhor com escalas diferentes nos dados. Utilizamos `StandardScaler` para transformar os dados para uma distribuição normal com média 0 e desvio padrão 1.
+Normalização ajuda o modelo a convergir mais rápido e a lidar melhor com escalas diferentes nos dados. Utilizamos `StandardScaler` para transformar os dados para uma distribuição normal com média 0 e desvio padrão 1.
 
 - `scaler.fit_transform(X_train)`: Calcula média e desvio padrão dos dados de treino e aplica a transformação.
 - `scaler.transform(X_test)`: Aplica a mesma transformação nos dados de teste, mantendo a escala.
@@ -56,7 +56,7 @@ O modelo é treinado com `model.fit`, aplicando os callbacks de *fine-tuning* pa
 
 ## 8. Avaliação e Visualização dos Resultados
 
-Após o treinamento, o modelo é avaliado nos dados de teste. Também plotamos a acurácia e a perda para monitorar a evolução do treinamento. Esses gráficos ajudam a visualizar como o fine-tuning influenciou o desempenho do modelo ao longo das épocas.
+Após o treinamento, o modelo é avaliado nos dados de teste. Também foi plotado a acurácia e a perda para monitorar a evolução do treinamento. Esses gráficos ajudam a visualizar como o fine-tuning influenciou o desempenho do modelo ao longo das épocas.
 
 ---
 
