@@ -1,6 +1,6 @@
 # FineTuning
 
-Este repositório implementa uma rede neural com técnicas de **fine-tuning** para otimização do desempenho. Abaixo estão as etapas do processo, desde a criação da base de dados até a avaliação do modelo.
+Este repositório implementa uma rede neural com técnicas de **fine-tuning** para otimização do desempenho. Abaixo estão as etapas do processo, desde a criação da base de dados até a avaliação do modelo, para o arquivo `FineTuning_Model.py`.
 
 ## 1. Base de Dados
 
